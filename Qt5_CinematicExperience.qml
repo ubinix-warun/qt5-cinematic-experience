@@ -1,11 +1,14 @@
-import QtQuick 2.0
+import QtQuick 2.4
+import QtQuick.Controls 1.3
 import "content"
 
-Item {
+ApplicationWindow {
     id: mainWindow
 
+    title: qsTr("Qt5 Cinema")
     width: 1920
     height: 1080
+    visible: true
 
     QtObject {
         id: settings
